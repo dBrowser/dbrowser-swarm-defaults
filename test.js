@@ -1,5 +1,5 @@
 var test = require('tape')
-var swarm = require('discovery-swarm')
+var swarm = require('dweb-discovery-swarm')
 var swarmConfig = require('.')
 
 test('two swarms connect and exchange data with defaults', function (t) {

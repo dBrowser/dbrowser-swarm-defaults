@@ -4,11 +4,11 @@
 [![travis][travis-image]][travis-url]
 [![standard][standard-image]][standard-url]
 
-Use Dat defaults for `dns` and `dht` servers in [hyperdiscovery](https://github.com/datproject/hyperdiscovery) or [discovery-swarm](https://github.com/mafintosh/discovery-swarm). The *dns* and *dht* servers are used to discover other peers.
+Use Dat defaults for `dns` and `dht` servers in [hyperdiscovery](https://github.com/datproject/hyperdiscovery) or [dweb-discovery-swarm](https://github.com/mafintosh/dweb-discovery-swarm). The *dns* and *dht* servers are used to discover other peers.
 
 ### Using Other Discovery Servers
 
-Run discovery servers with [dns-discovery](https://github.com/mafintosh/dns-discovery#cli) or a [bittorrent-dht](https://github.com/webtorrent/bittorrent-dht) server (such as https://github.com/hyperswarm/dht).
+Run discovery servers with [dns-discovery](https://github.com/mafintosh/dns-discovery#cli) or a [bittorrent-dht](https://github.com/webtorrent/bittorrent-dht) server (such as https://github.com/dwswarm/dht).
 
 ## Usage
 
@@ -17,7 +17,7 @@ Create a config object and pass it to discovery swarm.
 Any options you specify will overwrite the defaults. See discovery swarm for options.
 
 ```javascript
-var Swarm = require('discovery-swarm')
+var Swarm = require('dweb-discovery-swarm')
 var defaults = require('dat-swarm-defaults')
 
 var config = defaults({

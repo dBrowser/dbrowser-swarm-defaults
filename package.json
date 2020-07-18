@@ -13,7 +13,7 @@
   "author": "Dweb Project Contributors",
   "license": "MIT",
   "devDependencies": {
-    "dweb-discovery-swarm": "^1.0.0",
+    "dweb-dweb-discovery-swarm": "^1.0.0",
     "standard": "*",
     "tape": "^4.4.0"
   },
