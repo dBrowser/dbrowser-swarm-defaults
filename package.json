@@ -1,28 +1,27 @@
 {
-  "name": "dbrowser-swarm-defaults",
-  "version": "1.0.0",
-  "description": "Default dWeb discovery and bootstrap towers.",
+  "name": "datland-swarm-defaults",
+  "version": "1.0.2",
+  "description": "Dat Defaults for Discovery Swarm",
   "main": "index.js",
   "scripts": {
-    "test": "standard && tape test.js"
+    "test": "standard && tape test.js | tap-spec"
   },
-  "keywords": [
-    "dweb",
-    "ddatabase"
-  ],
-  "author": "Dweb Project Contributors",
-  "license": "MIT",
+  "author": "Joe Hand <joe@joeahand.com> (http://joeahand.com/)",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "xtend": "^4.0.1"
+  },
   "devDependencies": {
-    "dweb-dweb-discovery-swarm": "^1.0.0",
-    "standard": "*",
-    "tape": "^4.4.0"
+    "tap-spec": "^4.1.1",
+    "tape": "^4.4.0",
+    "discovery-swarm": "^3.1.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/datproject/dat-swarm-defaults.git"
+    "url": "git+https://github.com/joehand/datland-swarm-defaults.git"
   },
   "bugs": {
-    "url": "https://github.com/datproject/dat-swarm-defaults/issues"
+    "url": "https://github.com/joehand/datland-swarm-defaults/issues"
   },
-  "homepage": "https://github.com/datproject/dat-swarm-defaults#readme"
+  "homepage": "https://github.com/joehand/datland-swarm-defaults#readme"
 }

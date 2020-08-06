@@ -1,6 +1,6 @@
 var test = require('tape')
-var swarm = require('dweb-discovery-swarm')
-var swarmConfig = require('.')
+var swarmConfig = require('./')
+var swarm = require('discovery-swarm')
 
 test('two swarms connect and exchange data with defaults', function (t) {
   var config = swarmConfig() // no opts
@@ -12,7 +12,7 @@ test('two swarms connect and exchange data with defaults', function (t) {
     connection.on('data', function (data) {
       a.destroy()
       b.destroy()
-      t.same(data, Buffer.from('hello'))
+      t.same(data, Buffer('hello'))
       t.end()
     })
   })
